@@ -35,9 +35,9 @@ configuration ConfigureADBDC
             DomainName = $DomainName
             DomainAdministratorCredential = $DomainCreds
             SafemodeAdministratorPassword = $DomainCreds
-            DatabasePath = "C:\NTDS"
-            LogPath = "C:\NTDS"
-            SysvolPath = "C:\SYSVOL"
+            DatabasePath = "C:\Windows\NTDS"
+            LogPath = "C:\Windows\NTDS"
+            SysvolPath = "C:\Windows\SYSVOL"
             DependsOn = "[xWaitForADDomain]DscForestWait"
         }
 <#
