@@ -1,7 +1,203 @@
-# Ignore everything
-*
-
-#Except these files/folders
-!DSC
-!nestedtemplates
-!.gitignore
+AVD Deployment/01. Deploy Azure Base Infra.ps1
+AVD Deployment/02. Create VNET Peering.ps1
+AVD Deployment/02. Post Infra Configuration script templates.ps1
+AVD Deployment/03a. Assign peering permissions.ps1
+AVD Deployment/03b. Create VNET Peering.ps1
+AVD Deployment/03c. Remove peering permissions.ps1
+AVD Deployment/04. Create AVD resources.ps1
+AVD Deployment/05. Create Automation Account.ps1
+AVD Deployment/99. Add Additional AVD SessionHosts.ps1
+AVD Deployment/**
+AVD Deployment/BicepTemplates/createRecoveryServicesVault.bicep
+Azure Policy/CreateManagedIdentity.bicep
+Azure Policy/**
+.gitignore
+Azure Monitoring/CreateActionGroup.bicep
+Azure Monitoring/*
+DomainControllerDeployment/azuredeploy.json
+DomainControllerDeployment/azuredeploy.parameters.json
+DomainControllerDeployment/main.bicep
+DomainControllerDeployment/readme.MD
+Handleidingen/Installatie Remote Desktop V1.0.docx
+Handleidingen/Installatie Remote Desktop V1.0.pdf
+Handleidingen/Installatie Remote Desktop.docx
+Oud/variablesChemelco.json
+Oud/variablesGraaco.json
+Oud/variablesLely.json
+Oud/variablesRik.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra.zip
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/azuredeploy.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/DSC/ConfigureADBDC.ps1
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/DSC/ConfigureADBDC.zip
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/DSC/CreateADPDC.ps1
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/DSC/CreateADPDC.zip
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/DSC/CreateFileshare.ps1
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/DSC/PrepareADBDC.ps1
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/DSC/PrepareADBDC.zip
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/configureSecondaryADC.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/createADForest.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/createAvailabilitySet.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/createLogAnalyticsWorkspace-WVD.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/createLogAnalyticsWorkspace.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/createNic.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/createRecoveryServicesVault.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/createStorageaccount.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/createVM.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/customScripting.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/deployMonitoringAgents.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/prepareSecondaryADC.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/updateNic.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/vnet-with-dns-server.json
+Oud/AVD in dedicated AD/1.1/_blob storage/01. infra/nestedtemplates/vnet.json
+Oud/AVD in dedicated AD/1.1/_blob storage/02. scriptingtemplates/AzFilesHybrid.zip
+Oud/AVD in dedicated AD/1.1/_blob storage/02. scriptingtemplates/configActiveDirectoryAuthenticationForAzureFilesTemplate.ps1
+Oud/AVD in dedicated AD/1.1/_blob storage/02. scriptingtemplates/configActiveDirectoryTemplate.ps1
+Oud/AVD in dedicated AD/1.1/_blob storage/02. scriptingtemplates/configAzureFileServicesTemplate.ps1
+Oud/AVD in dedicated AD/1.1/_blob storage/02. scriptingtemplates/configAzureRecoveryVaultTemplate.ps1
+Oud/AVD in dedicated AD/1.1/AAD Connect/AAD Connect configureren.docx
+Oud/AVD in dedicated AD/1.1/Azure Resources/01. Create Infrastructure resources.ps1
+Oud/AVD in dedicated AD/1.1/Azure Resources/02. Post Infra Configuration script templates.ps1
+Oud/AVD in dedicated AD/1.1/Azure Resources/03. Create WVD resources.ps1
+Oud/AVD in dedicated AD/1.1/Azure Resources/04. Create Automation Account.ps1
+Oud/AVD in dedicated AD/1.1/Azure Resources/05. Create Logic App and Schedule.ps1
+Oud/AVD in dedicated AD/1.1/Azure Resources/99. Add Additional WVD SessionHosts.ps1
+Oud/AVD in dedicated AD/1.1/Azure Resources/documentatie.docx
+Oud/AVD in dedicated AD/1.1/Azure Resources/variables.json
+Oud/AVD in dedicated AD/1.1/Client VPN/Client VPN configureren.docx
+Oud/AVD in dedicated AD/1.1/Client VPN/Create Certificate.ps1
+Oud/AVD in dedicated AD/1.1/Exchange Schema/Schema documentatie.docx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO documentatie.docx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPOImport.ps1
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{1C247AE9-30C4-4AAD-B895-773642AA4C50}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{1C247AE9-30C4-4AAD-B895-773642AA4C50}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{1C247AE9-30C4-4AAD-B895-773642AA4C50}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{1C247AE9-30C4-4AAD-B895-773642AA4C50}/DomainSysvol/GPO/Machine/Scripts/PSscripts.ini
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{1C247AE9-30C4-4AAD-B895-773642AA4C50}/DomainSysvol/GPO/Machine/Scripts/scripts.ini
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{1C247AE9-30C4-4AAD-B895-773642AA4C50}/DomainSysvol/GPO/Machine/Scripts/Shutdown/logoff-users.ps1
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{27DC4884-FC87-445E-BB0B-E5BD681BC1C0}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{27DC4884-FC87-445E-BB0B-E5BD681BC1C0}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{27DC4884-FC87-445E-BB0B-E5BD681BC1C0}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{27DC4884-FC87-445E-BB0B-E5BD681BC1C0}/DomainSysvol/GPO/Machine/comment.cmtx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{27DC4884-FC87-445E-BB0B-E5BD681BC1C0}/DomainSysvol/GPO/Machine/registry.pol
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{4E15D668-944F-4100-89AE-AC84B70AF896}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{4E15D668-944F-4100-89AE-AC84B70AF896}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{4E15D668-944F-4100-89AE-AC84B70AF896}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{4E15D668-944F-4100-89AE-AC84B70AF896}/DomainSysvol/GPO/Machine/registry.pol
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{4E15D668-944F-4100-89AE-AC84B70AF896}/DomainSysvol/GPO/Machine/microsoft/windows nt/SecEdit/GptTmpl.inf
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5812CF70-E3BF-4FC5-BBE2-36C06C419D69}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5812CF70-E3BF-4FC5-BBE2-36C06C419D69}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5812CF70-E3BF-4FC5-BBE2-36C06C419D69}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5812CF70-E3BF-4FC5-BBE2-36C06C419D69}/DomainSysvol/GPO/Machine/comment.cmtx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5812CF70-E3BF-4FC5-BBE2-36C06C419D69}/DomainSysvol/GPO/Machine/registry.pol
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5812CF70-E3BF-4FC5-BBE2-36C06C419D69}/DomainSysvol/GPO/Machine/Microsoft/Windows NT/SecEdit/GptTmpl.inf
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5812CF70-E3BF-4FC5-BBE2-36C06C419D69}/DomainSysvol/GPO/Machine/Preferences/Registry/Registry.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{597EFD64-1ED6-42BB-9FA3-2B0BA6A35E2D}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{597EFD64-1ED6-42BB-9FA3-2B0BA6A35E2D}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{597EFD64-1ED6-42BB-9FA3-2B0BA6A35E2D}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{597EFD64-1ED6-42BB-9FA3-2B0BA6A35E2D}/DomainSysvol/GPO/Machine/comment.cmtx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{597EFD64-1ED6-42BB-9FA3-2B0BA6A35E2D}/DomainSysvol/GPO/Machine/registry.pol
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5C34CAC5-9C80-47FF-A17B-EADC351CB68B}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5C34CAC5-9C80-47FF-A17B-EADC351CB68B}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5C34CAC5-9C80-47FF-A17B-EADC351CB68B}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5C34CAC5-9C80-47FF-A17B-EADC351CB68B}/DomainSysvol/GPO/Machine/microsoft/windows nt/SecEdit/GptTmpl.inf
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5C34CAC5-9C80-47FF-A17B-EADC351CB68B}/DomainSysvol/GPO/Machine/Preferences/Groups/Groups.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5D0AAF42-850B-49A1-B842-3A8A37B580C7}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5D0AAF42-850B-49A1-B842-3A8A37B580C7}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5D0AAF42-850B-49A1-B842-3A8A37B580C7}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5D0AAF42-850B-49A1-B842-3A8A37B580C7}/DomainSysvol/GPO/User/comment.cmtx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5D0AAF42-850B-49A1-B842-3A8A37B580C7}/DomainSysvol/GPO/User/registry.pol
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5D0AAF42-850B-49A1-B842-3A8A37B580C7}/DomainSysvol/GPO/User/Preferences/Registry/Registry.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5F745D62-B698-4FE4-81C3-713360334892}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5F745D62-B698-4FE4-81C3-713360334892}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5F745D62-B698-4FE4-81C3-713360334892}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5F745D62-B698-4FE4-81C3-713360334892}/DomainSysvol/GPO/Machine/comment.cmtx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5F745D62-B698-4FE4-81C3-713360334892}/DomainSysvol/GPO/Machine/registry.pol
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5F745D62-B698-4FE4-81C3-713360334892}/DomainSysvol/GPO/Machine/Preferences/Files/Files.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5F745D62-B698-4FE4-81C3-713360334892}/DomainSysvol/GPO/Machine/Preferences/Folders/Folders.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{5F745D62-B698-4FE4-81C3-713360334892}/DomainSysvol/GPO/Machine/Preferences/Groups/Groups.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{A13C606F-7604-42B6-8301-D0B8668C0001}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{A13C606F-7604-42B6-8301-D0B8668C0001}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{A13C606F-7604-42B6-8301-D0B8668C0001}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{A13C606F-7604-42B6-8301-D0B8668C0001}/DomainSysvol/GPO/Machine/comment.cmtx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{A13C606F-7604-42B6-8301-D0B8668C0001}/DomainSysvol/GPO/Machine/registry.pol
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{A13C606F-7604-42B6-8301-D0B8668C0001}/DomainSysvol/GPO/User/comment.cmtx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{A13C606F-7604-42B6-8301-D0B8668C0001}/DomainSysvol/GPO/User/registry.pol
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{A13C606F-7604-42B6-8301-D0B8668C0001}/DomainSysvol/GPO/User/Preferences/RegionalOptions/RegionalOptions.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{D0A13310-7FA3-498E-8E21-28E66D6F08C8}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{D0A13310-7FA3-498E-8E21-28E66D6F08C8}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{D0A13310-7FA3-498E-8E21-28E66D6F08C8}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{D0A13310-7FA3-498E-8E21-28E66D6F08C8}/DomainSysvol/GPO/User/comment.cmtx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{D0A13310-7FA3-498E-8E21-28E66D6F08C8}/DomainSysvol/GPO/User/registry.pol
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{FBC649D5-CF05-457C-80E3-80CC663DD4B9}/Backup.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{FBC649D5-CF05-457C-80E3-80CC663DD4B9}/bkupInfo.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{FBC649D5-CF05-457C-80E3-80CC663DD4B9}/gpreport.xml
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{FBC649D5-CF05-457C-80E3-80CC663DD4B9}/DomainSysvol/GPO/Machine/comment.cmtx
+Oud/AVD in dedicated AD/1.1/Group Policies/GPO's/{FBC649D5-CF05-457C-80E3-80CC663DD4B9}/DomainSysvol/GPO/Machine/registry.pol
+Oud/AVD in dedicated AD/1.1/Group Policies/Netlogon/AppMasking/General Settings.fxa
+Oud/AVD in dedicated AD/1.1/Group Policies/Netlogon/AppMasking/General Settings.fxr
+Oud/AVD in dedicated AD/1.1/Group Policies/Netlogon/StartMenu/start_layout.xml
+Oud/AVD in dedicated AD/1.1/Image Management/00. Create SIG - Image Definition.ps1
+Oud/AVD in dedicated AD/1.1/Image Management/01. Create VM from Snapshot.ps1
+Oud/AVD in dedicated AD/1.1/Image Management/02. Create Snapshot - Master Image.ps1
+Oud/AVD in dedicated AD/1.1/Image Management/03. Create Image and add to SIG.ps1
+Oud/AVD in dedicated AD/1.1/Image Management/documentatie.docx
+Oud/AVD in dedicated AD/1.1/ImmutableId/documentatie.docx
+Oud/AVD in dedicated AD/1.1/ImmutableId/ImmutableId.ps1
+Oud/AVD in dedicated AD/1.1/ImmutableId/NewImmutableId.csv
+Oud/AVD in dedicated AD/1.1/OneDrive/Pre-Provision OneDrive for all licensed users.ps1
+Oud/AVD in dedicated AD/1.1/Password Writeback/Password write-back documentatie.docx
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra.zip
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/azuredeploy.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/DSC/ConfigureADBDC.ps1
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/DSC/ConfigureADBDC.zip
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/DSC/CreateADPDC.ps1
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/DSC/CreateADPDC.zip
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/DSC/CreateFileshare.ps1
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/DSC/PrepareADBDC.ps1
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/DSC/PrepareADBDC.zip
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/configureSecondaryADC.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/createADForest.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/createAvailabilitySet.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/createLogAnalyticsWorkspace-WVD.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/createLogAnalyticsWorkspace.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/createNic.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/createRecoveryServicesVault.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/createStorageaccount.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/createVM.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/customScripting.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/deployMonitoringAgents.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/prepareSecondaryADC.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/updateNic.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/vnet-with-dns-server.json
+Oud/AVD in dedicated AD/1.2/_blob storage/01. infra/nestedtemplates/vnet.json
+Oud/AVD in dedicated AD/1.2/_blob storage/02. scriptingtemplates/AzFilesHybrid.zip
+Oud/AVD in dedicated AD/1.2/_blob storage/02. scriptingtemplates/configActiveDirectoryAuthenticationForAzureFilesTemplate.ps1
+Oud/AVD in dedicated AD/1.2/_blob storage/02. scriptingtemplates/configActiveDirectoryTemplate.ps1
+Oud/AVD in dedicated AD/1.2/_blob storage/02. scriptingtemplates/configAzureFileServicesTemplate.ps1
+Oud/AVD in dedicated AD/1.2/_blob storage/02. scriptingtemplates/configAzureRecoveryVaultTemplate.ps1
+Oud/AVD in dedicated AD/1.2/AAD Connect/AAD Connect configureren.docx
+Oud/AVD in dedicated AD/1.2/Azure Resources/01. Create Infrastructure resources.ps1
+Oud/AVD in dedicated AD/1.2/Azure Resources/02. Post Infra Configuration script templates.ps1
+Oud/AVD in dedicated AD/1.2/Azure Resources/03. Create WVD resources.ps1
+Oud/AVD in dedicated AD/1.2/Azure Resources/04. Create Automation Account.ps1
+Oud/AVD in dedicated AD/1.2/Azure Resources/05. Create Logic App and Schedule.ps1
+Oud/AVD in dedicated AD/1.2/Azure Resources/99. Add Additional WVD SessionHosts.ps1
+Oud/AVD in dedicated AD/1.2/Azure Resources/documentatie.docx
+Oud/AVD in dedicated AD/1.2/Azure Resources/variables.json
+Oud/AVD in dedicated AD/1.2/Client VPN/Client VPN configureren.docx
+Oud/AVD in dedicated AD/1.2/Client VPN/Create Certificate.ps1
+Oud/AVD in dedicated AD/1.2/Exchange Schema/Schema documentatie.docx
+Oud/AVD in dedicated AD/1.2/Image Management/00. Create SIG - Image Definition.ps1
+Oud/AVD in dedicated AD/1.2/Image Management/01. Create VM from Snapshot.ps1
+Oud/AVD in dedicated AD/1.2/Image Management/02. Create Snapshot - Master Image.ps1
+Oud/AVD in dedicated AD/1.2/Image Management/03. Create Image and add to SIG.ps1
+Oud/AVD in dedicated AD/1.2/Image Management/documentatie.docx
+Oud/AVD in dedicated AD/1.2/ImmutableId/documentatie.docx
+Oud/AVD in dedicated AD/1.2/ImmutableId/ImmutableId.ps1
+Oud/AVD in dedicated AD/1.2/ImmutableId/NewImmutableId.csv
+Oud/AVD in dedicated AD/1.2/OneDrive/Pre-Provision OneDrive for all licensed users.ps1
+Oud/AVD in dedicated AD/1.2/Password Writeback/Password write-back documentatie.docx
+Oud/Insight/Presentaties/WVD Jumpstart commercial track.pdf
+Oud/Insight/Presentaties/WVD Jumpstart technical track.pdf
+Oud/Insight/Test Lab/Windows Virtual Desktop Setup Guide - In-class Hands On (v1.2).pdf
+Oud/Insight/Test Lab/Windows Virtual Desktop Setup Guide - Prerequisites (v1.2).pdf
