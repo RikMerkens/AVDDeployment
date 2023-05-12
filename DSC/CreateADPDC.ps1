@@ -56,12 +56,12 @@ configuration CreateADPDC
             DependsOn = "[WindowsFeature]DNS"
         }
 
-        xWaitforDisk Disk2
-        {
-            DiskNumber = 2
-            RetryIntervalSec =$RetryIntervalSec
-            RetryCount = $RetryCount
-        }
+        # xWaitforDisk Disk2
+        # {
+        #     DiskNumber = 2
+        #     RetryIntervalSec =$RetryIntervalSec
+        #     RetryCount = $RetryCount
+        # }
 
         # xDisk ADDataDisk {
         #     DiskNumber = 2
@@ -98,7 +98,7 @@ configuration CreateADPDC
             # DatabasePath = "F:\NTDS"
             # LogPath = "F:\NTDS"
             # SysvolPath = "F:\SYSVOL"
-            DependsOn = @("[WindowsFeature]ADDSInstall", "[xDisk]ADDataDisk")
+            DependsOn = @("[WindowsFeature]ADDSInstall")
         }
 
         xPendingReboot RebootAfterPromotion{
